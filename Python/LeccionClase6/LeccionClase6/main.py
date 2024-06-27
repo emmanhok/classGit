@@ -1,4 +1,4 @@
-# CLASE 5
+# CLASE 6
 
 # En esta clase veremos la sentencia if/else
 """
@@ -61,7 +61,7 @@ else:
 # Ejecución Debug en if/else
 # Punto de ruptura en linea 65
 # Ejecutamos en debug quiere decir depurar
-
+"""
 print("")
 condicion = 10
 if condicion == True:
@@ -70,3 +70,29 @@ elif condicion == False:
     print("Condicion Falsa")
 else:
     print("Condicion Sin Especificar")
+"""
+# Ejercicio: Conversión de número a texto
+# Atajo para comentar un conjunto de líneas: ctrl + diagonal
+
+# num = int(input("Digite un numero en el rango del 1 al 3: "))
+# numTexto = ""
+# if num == 1:
+#     numTexto = "Numero uno"
+# elif num == 2:
+#     numTexto = "Numero dos"
+# elif num == 3:
+#     numTexto = "Numero tres"
+# else:
+#     numTexto = "Has ingresado un numero fuera del rango"
+# print(f"El numero ingresado es: {num} - {numTexto}")
+
+# Sintaxis simplificada (Operador Ternario)
+# Se recomienda esta sintaxis simplificada solo si el codigo es pequeño
+# Si se utiliza elif por ejemplo no se recomienda su uso
+
+condicion = True
+# if condicion:
+#     print("Condicion Verdadera")
+# else:
+#     print("Condicion Falsa")
+print("Condicion Verdadera ") if condicion else print("Condicion Falsa")
