@@ -257,7 +257,9 @@ Revisar y ejecutar cada comando, hacerlo como practica</sub>
 <sub>
 Profesor Ariel Betancud</sub>
 
-# CLASE 6 MIÉRCOLES 15 DE MAYO DEL 2024
+# CLASE 6
+# CLASE 7 
+# MIÉRCOLES 15 DE MAYO DEL 2024
 ## Git reset vs. Git rm parte 7
 <sub>
 Los comandos git reset y git rm tienen utilidades muy diferentes, pero pueden confundirse fácilmente.</sub>
