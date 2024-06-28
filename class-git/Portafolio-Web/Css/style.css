@@ -1,7 +1,17 @@
+:root{
+    --body-bg-color: rgb(6, 23, 150);
+    --text-color: rgb(255, 255, 255);
+    --colorh1-color: rgb(195, 169, 0);
+}
+
 body{
-    background:rgba(0, 3, 84, 0.5);
-    color: white;
+    background:var(--body-bg-color);
+    color:var(--text-color);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1, h2{
+    color: var(--colorh1-color)
 }
 
 .navigation{
@@ -17,13 +27,13 @@ body{
     text-align: center;
     padding: 0.5;
     border-radius: 0.5rem;
-    background: #5c05051a;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+    background: #ffffff1a;
+    box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .sobremi{
@@ -36,9 +46,27 @@ a{
     padding: 5rem;
     line-height: 2.5rem;
     font-size: large;
-    color: azure;
+    color: rgb(255, 255, 255);
+    gap: 5rem;
+    align-items: center;
 }
-
+.fotoPerfil{
+    border-radius: 80%;
+}
+.experiencia, .estudios{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    color: white;
+}
+.container-experiencia, .container-estudios{
+    width: 100%;
+    padding: 2rem;
+    margin-top: 5rem;
+    line-height: 2.5rem;
+    font-size: large;
+    margin: 8rem;
+}
 @media (max-width: 767px){
     .titulo {
         justify-content: center;
@@ -49,10 +77,21 @@ a{
         align-items: center;
     }
     .container-sobremi{
+        flex-direction: column;
         width: 100%;
         padding: 1;
         margin-top: 1rem;
         line-height: 2.5rem;
+        font-size: small;
+    }
+    .container-experiencia, .container-estudios{
+        width: 100%;
+        margin: 0rem;
+    }
+    .experiencia, .estudios{
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem;
         font-size: small;
     }
 }
