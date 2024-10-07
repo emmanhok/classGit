@@ -1,7 +1,0 @@
-Bienvenido
-
-mi nombre es Emmanuel
-
-estoy estudiando Programacion
-
-Cambio de la ultima linea de historia.txt Clase 5 Programacion 1 Lunes 2024
