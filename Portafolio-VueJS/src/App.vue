@@ -1,13 +1,16 @@
 <script setup>
 /* AQUÍ VA TODO PURO JS. Con setup luego en template utilizando doble-llaves se ejecutara directamente el codigo js*/
 import NavBar from "./components/NavBar.vue";
+import DatosPersonales from "./components/DatosPersonales.vue";
 </script>
 
 <template>
   <!--AQUÍ VA HTML-->
-  <!--Barra de navegacion-->
   <header>
+    <!--Barra de navegacion-->
     <NavBar />
+    <!--Datos personales-->
+    <DatosPersonales />
   </header>
   <main>
     <section id="educacion"><h2>Educación - Cursos</h2></section>
@@ -21,6 +24,5 @@ import NavBar from "./components/NavBar.vue";
 
 <style scoped>
 /* AQUÍ VA EL STYLE CSS */
-
 
 </style>
