@@ -1,6 +1,6 @@
 <script setup>
 /* AQUÍ VA TODO PURO JS. Con setup luego en template utilizando doble-llaves se ejecutara directamente el codigo js*/
-import NavBar from './components/navbar.vue';
+import NavBar from "./components/NavBar.vue";
 </script>
 
 <template>
