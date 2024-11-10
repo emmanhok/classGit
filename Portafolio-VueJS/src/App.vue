@@ -5,6 +5,7 @@ import DatosPersonales from "./components/DatosPersonales.vue";
 import Educacion from "./components/EducacionComponente.vue";
 import ExperienciaComponente from "./components/ExperienciaComponente.vue";
 import ProyectosComponente from "./components/ProyectosComponente.vue";
+import HabilidadesComponente from "./components/HabilidadesComponente.vue";
 
 </script>
 
@@ -26,6 +27,7 @@ import ProyectosComponente from "./components/ProyectosComponente.vue";
     <section id="proyectos"><h2>Proyectos</h2></section>
     <ProyectosComponente />
     <section id="habilidades"><h2>Habilidades</h2></section>
+    <HabilidadesComponente />
     <section id="intereses"><h2>Intereses</h2></section>
   </main>
   <!--Aqui va el contenido principal de la pagina web-->
