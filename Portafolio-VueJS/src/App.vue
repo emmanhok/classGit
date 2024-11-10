@@ -6,12 +6,13 @@ import Educacion from "./components/EducacionComponente.vue";
 import ExperienciaComponente from "./components/ExperienciaComponente.vue";
 import ProyectosComponente from "./components/ProyectosComponente.vue";
 import HabilidadesComponente from "./components/HabilidadesComponente.vue";
+import InteresesComponente from "./components/InteresesComponente.vue";
 
 </script>
 
 <template>
   <!--AQUÍ VA HTML-->
-  <header>
+  <header id="top">
     <!--Barra de navegacion-->
     <NavBar />
     <!--Datos personales-->
@@ -29,11 +30,22 @@ import HabilidadesComponente from "./components/HabilidadesComponente.vue";
     <section id="habilidades"><h2>Habilidades</h2></section>
     <HabilidadesComponente />
     <section id="intereses"><h2>Intereses</h2></section>
+    <InteresesComponente />
   </main>
   <!--Aqui va el contenido principal de la pagina web-->
+  <footer>
+    <a href="stop">Inicio</a>
+    <p>© 2024 Herrera Emmanuel - Portafolio Web</p>
+  </footer>
 </template>
 
 <style scoped>
 /* AQUÍ VA EL STYLE CSS */
-
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-size: 1.3rem;
+}
 </style>
