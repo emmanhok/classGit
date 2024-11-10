@@ -7,44 +7,35 @@ import { ref } from 'vue';
 const habilidades = ref([
     {
         id: 1, nombre: 'Lenguajes de Programación', habilidades: [
-            { id: 1, nombre: 'JavaScript', nivel: 'Avanzado', icono: '/src/components/icons/js.svg' },
-            { id: 2, nombre: 'Python', nivel: 'Intermedio', icono: '/src/components/icons/python.svg' },
-            { id: 3, nombre: 'HTML/CSS', nivel: 'Avanzado', icono: '/src/components/icons/html-css.svg' },
-            { id: 4, nombre: 'Java', nivel: 'Intermedio', icono: '/src/components/icons/java.svg' },
-            { id: 5, nombre: 'SQL', nivel: 'Intermedio', icono: '/src/components/icons/sql.svg' }
+            { id: 1, nombre: 'HTML/CSS', nivel: 'Principiante', icono: '/src/components/icons/html.svg' },
+            { id: 2, nombre: 'Python', nivel: 'Principiante', icono: '/src/components/icons/python.svg' },
+            { id: 3, nombre: 'Java', nivel: 'Principiante', icono: '/src/components/icons/java.svg' },
+            { id: 4, nombre: 'JavaScript', nivel: 'Principiante', icono: '/src/components/icons/js.svg' },
+            { id: 5, nombre: 'SQL', nivel: 'Principiante', icono: '/src/components/icons/sql.svg' }
         ]
     },
     {
         id: 2, nombre: 'Frameworks y Librerías', habilidades: [
-            { id: 1, nombre: 'React.js', nivel: 'Avanzado', icono: '/src/components/icons/react.svg' },
-            { id: 2, nombre: 'Vue.js', nivel: 'Intermedio', icono: '/src/components/icons/vue.svg' },
-            { id: 3, nombre: 'Node.js', nivel: 'Avanzado', icono: '/src/components/icons/node.svg' },
-            { id: 4, nombre: 'Django', nivel: 'Intermedio', icono: '/src/components/icons/django.svg' },
-            { id: 5, nombre: 'Bootstrap', nivel: 'Avanzado', icono: '/src/components/icons/bootstrap.svg' }
+            { id: 1, nombre: 'Vue.js', nivel: 'Principiante', icono: '/src/components/icons/vue.svg' },
         ]
     },
     {
         id: 3, nombre: 'Herramientas y Software', habilidades: [
-            { id: 1, nombre: 'Git', nivel: 'Avanzado', icono: '/src/components/icons/git.svg' },
-            { id: 2, nombre: 'Docker', nivel: 'Intermedio', icono: '/src/components/icons/docker.svg' },
-            { id: 3, nombre: 'Cypress', nivel: 'Intermedio', icono: '/src/components/icons/cypress.svg' },
-            { id: 4, nombre: 'Figma', nivel: 'Intermedio', icono: '/src/components/icons/figma.svg' },
-            { id: 5, nombre: 'Visual Studio Code', nivel: 'Avanzado', icono: '/src/components/icons/visual.svg' }
+            { id: 1, nombre: 'Git', nivel: 'Intermedio', icono: '/src/components/icons/git.svg' },
+            { id: 2, nombre: 'Visual Studio Code', nivel: 'Intermedio', icono: '/src/components/icons/vsc.svg' }
         ]
     },
     {
         id: 4, nombre: 'Bases de Datos',
         habilidades: [
-            { id: 1, nombre: 'MongoDB', nivel: 'Avanzado', icono: '/src/components/icons/mongo.svg' },
-            { id: 2, nombre: 'MySQL', nivel: 'Intermedio', icono: '/src/components/icons/mysql.svg' },
-            { id: 3, nombre: 'PostgreSQL', nivel: 'Intermedio', icono: '/src/components/icons/postgres.svg' }
+            { id: 1, nombre: 'MySQL', nivel: 'Principiante', icono: '/src/components/icons/mysql.svg' },
         ]
     },
     {
         id: 5, nombre: 'Idiomas',
         habilidades: [
-            { id: 1, nombre: 'Español', nivel: 'Nativo', icono: '/src/components/icons/arg.svg' },
-            { id: 2, nombre: 'Inglés', nivel: 'Avanzado (C1)', icono: '/src/components/icons/eeuu.svg' }
+            { id: 1, nombre: 'Español', nivel: 'Nativo', icono: '/src/components/icons/sp.svg' },
+            { id: 2, nombre: 'Inglés', nivel: 'Medio', icono: '/src/components/icons/en.svg' }
         ]
     }
 ]);
@@ -63,3 +54,74 @@ const habilidades = ref([
         </div>
     </div>
 </template>
+
+<style scoped>
+.skills-contenedor{
+    padding: 2rem;
+    margin-inline: 2rem;
+}
+.skills-categoria {
+    margin-bottom: 10px;
+    height: 10rem;
+    background-color: rgb(28, 41, 52);
+    border-radius: 15px;
+    text-shadow: 1px 1px #ff0000;
+}
+
+.skills-categoria h3 {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: aliceblue;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 6px 6px #060606;
+}
+.skills {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(241, 245, 243, 0.856);
+    padding: 0.2em;
+    border-radius: 20px;
+    box-shadow: 8px 0px 15px 8px rgb(207, 20, 20);
+    flex: 1 1 200px;
+    max-width: 250px;
+}
+.skill:hover {
+    background-color: rgba(255, 240, 29, 0.963);
+}
+
+.skill img {
+    width: 35px;
+    height: 35px;
+}
+
+.skill span {
+    font-size: 1em;
+    color: #333;
+}
+
+.skill:hover {
+    font-size: 1.3em;
+    transition: 1s ease;
+}
+@media (max-width: 768px) {
+    .skills-categoria h3 {
+        justify-content: center;
+    }
+
+    .skill {
+        justify-content: center;
+    }
+}
+</style>
