@@ -35,7 +35,7 @@ import InteresesComponente from "./components/InteresesComponente.vue";
   <!--Aqui va el contenido principal de la pagina web-->
   <footer>
     <a href="stop">Inicio</a>
-    <p>© 2024 Herrera Emmanuel - Portafolio Web</p>
+    <p>© 2024 Herrera Emmanuel - Portafolio Web - Tutorial UTN FRSR</p>
   </footer>
 </template>
 

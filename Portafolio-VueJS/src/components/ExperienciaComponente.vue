@@ -1,12 +1,15 @@
 <script setup>
 import { ref } from 'vue';
 
+import develop1 from '/src/assets/develop1.png';
+import develop2 from '/src/assets/develop2.png';
+
 const titulo = 'Desarrollador Full Stack';
-const fecha = 'Desde Enero 2022 / Julio 2024';
+const fecha = 'Desde Enero 2024 / Julio 2024';
 
 const experiencias = ref([
-    { id: 1, src: '/src/assets/develop1.png', parrafo: 'Desarrolle una aplicación con mi equipo de estudio de la Tecnicatura llamada SolucionCoin en pseudocodigo (PSeInt), la cual consiste en una serie de juegos de azar y de acertijos.' },
-    { id: 2, src: '/src/assets/develop2.png', parrafo: 'Desarrolle junto con mi equipo de estudios la app de juegos SolucionCoin en lenguaje de programación Java.' }
+    { id: 1, src: develop1, parrafo: 'Desarrolle una aplicación con mi equipo de estudio de la Tecnicatura llamada SolucionCoin en pseudocodigo (PSeInt), la cual consiste en una serie de juegos de azar y de acertijos.' },
+    { id: 2, src: develop2, parrafo: 'Desarrolle junto con mi equipo de estudios la app de juegos SolucionCoin en lenguaje de programación Java.' }
     /*{ id: 3, src: '/src/assets/configuracion.svg', parrafo: 'Implementé soluciones de autenticación y autorización, mejorando la seguridad del sitio web y reduciendo los intentos de acceso no autorizado en un 20%.' },
     { id: 4, src: '/src/assets/olux.svg', parrafo: 'Colaboré con diseñadores de UX/UI para crear interfaces de usuario atractivas y fáciles de usar, aumentando la satisfacción del cliente en un 15%.' },
     { id: 5, src: '/src/assets/watch.svg', parrafo: 'Automatizé procesos de despliegue continuo utilizando Jenkins y Docker, reduciendo los tiempos de despliegue en un 40%.' }*/

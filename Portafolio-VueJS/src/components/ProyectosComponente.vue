@@ -1,13 +1,17 @@
 <script setup>
 import { ref } from "vue";
 // .ref es una función que se utiliza para crear una referencia reactiva en Vue 3
+
+import proyecto1 from "/src/assets/proyecto1.png";
+import proyecto2 from "/src/assets/proyecto2.png";
+
 var misProyectos = ref([]);
 // .value es una propiedad que se utiliza para acceder al valor de una referencia reactiva en Vue 3
 misProyectos.value = ([
     // Esto es un array de objetos que contiene informacion sobre los proyectos
     {
         id: 1,
-        src: "/src/assets/proyecto1.png",
+        src: proyecto1,
         titulo: "Aplicación de juegos en PSeInt (2024)",
         descripcion: "Creamos una serie de juegos con el grupo Solucion 202 de la TUP denominado SolucionCoin",
         proyectoLink: "https://www.google.com.ar",
@@ -15,7 +19,7 @@ misProyectos.value = ([
     },
     {
         id: 2,
-        src: "/src/assets/proyecto2.png",
+        src: proyecto2,
         titulo: "Aplicacion de juegos en Java (2024)",
         descripcion: "Reformulamos la app de juegos SolucionCoin en lenguaje Java",
         proyectoLink: "https://www.google.com.ar",
