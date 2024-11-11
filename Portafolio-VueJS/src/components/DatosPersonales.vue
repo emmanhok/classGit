@@ -1,12 +1,16 @@
 <script setup>
+import linkedin from "/src/assets/linkedin.svg";
+import github from "/src/assets/github.svg";
+import cv from "/src/assets/cv.svg";
+
 const title = "Emmanuel Herrera Gandini";
 const description = "Técnico Universitario en Programación - UTN";
 const residencia = "Guaymallén, Mendoza, Argentina";
 const presentacion = "¡Hola! Bienvenidos a mi portafolio de proyectos. Soy desarrollador web con experiencias en el desarrollode aplicaciones web y móviles.";
 const redesSociales = [
-    {id: 1, name: "linkedin", src: "/src/assets/linkedin.svg", url: "https://www.linkedin.com/in/emmanuel-herrera-gandini-29485a312/"},
-    {id: 2, name: "github", src: "/src/assets/github.svg", url: "https://github.com/emmanhok"},
-    {id: 3, name: "curriculum", src: "/src/assets/cv.svg", url: ""},
+    {id: 1, name: "linkedin", src: linkedin, url: "https://www.linkedin.com/in/emmanuel-herrera-gandini-29485a312/"},
+    {id: 2, name: "github", src: github, url: "https://github.com/emmanhok"},
+    {id: 3, name: "curriculum", src: cv, url: ""},
 ];
 const telefono = "+54 9 2222-222222";
 </script>
